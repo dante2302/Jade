@@ -16,6 +16,12 @@
     --ff-lato:'Lato',sans-serif;
     --ff-sans:'Source Sans Pro',sans-serif;
     --fs-link: 1.7rem;
+    --fs-h1:2.2rem;
+}
+@media(min-width:768px){
+    :root{
+        --fs-h1:2.5rem;
+    }
 }
 body{
     font-family:var(--ff-lato);
@@ -62,15 +68,13 @@ nav a:hover{
     color:var(--jade);
 }
 .logo{
-    width:15rem;
-    margin-top:.5em;
     cursor:pointer;
     transition:all .5s ease
 }
 .logo:hover{
     transform:scale(1.05)
 }
-form{
+#search-form{
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -78,7 +82,7 @@ form{
     border:.5px solid rgba(0,0,0,0.4);
     border-radius:10px;
 }
-form.focused{
+#search-form.focused{
     border:2px solid black;
 }
 .nav-searchbar{
@@ -159,4 +163,18 @@ form.focused{
     .nav-ul.active{
         right:0px;
     }
+}
+.image-grid{
+    width:90%;
+    text-align:center;
+}
+.image-grid>h1{
+    font-size:var(--fs-h1);
+    font-weight:700;
+}
+.section-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
