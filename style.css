@@ -28,35 +28,44 @@ nav{
     align-items:center;
     flex-direction:column;
 }
-.nav-top{
-    width:80%;
+.nav-top,.nav-top-wrap{
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
-    margin-inline:
+}
+.nav-top{
+    width:95%;
+    justify-content:space-around;
 }
 .nav-top-wrap{
-    margin:2em;
     width:100%;
-    border-block: 2px solid black;
+    margin:2em;
+    border-block: 1px solid black;
 }
 .nav-ul{
 display:flex;
 flex-direction:row;
 }
-.nav-ul>li{
+nav a{
     margin:1em;
     font-size:var(--fs-link);
-}
-.link{
     color:black;
     font-weight:bold;
+    transition:all .2s ease
 }
+nav a:hover{
+    color:var(--jade)
+}  
 .home{
-    color:var(--green);
+    color:var(--jade);
 }
 .logo{
     width:15rem;
     margin-top:.5em;
+}
+.nav-searchbar{
+    color:rgba(0,0,0,0.6);
+    padding:1em;
+    border-radius:15px;
 }
