@@ -78,6 +78,9 @@ form{
     border:.5px solid rgba(0,0,0,0.4);
     border-radius:10px;
 }
+form.focused{
+    border:2px solid black;
+}
 .nav-searchbar{
     color:rgba(0,0,0,0.6);
     font-size:16px;
@@ -98,4 +101,62 @@ form{
 }
 .search-button>img{
     width:1rem;
+}
+ 
+/* Hamburger */
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+
+.bar{
+    width:2em;
+    height:5px;
+    display:block;
+    margin:5px auto;
+    background:black;
+    border-radius:2px;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5 ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+@media(max-width:1000px){
+    .hamburger{
+        display:block;
+        justify-self:flex-end;
+        margin-right:2em;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .nav-ul{
+        width:30%;
+        height:100%;
+        padding-top:4em;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap:1.8em;
+        overflow:hidden;
+        position:fixed;
+        right:-105%;
+        margin-right:auto;
+        top:140px;
+        z-index:1000;
+        transition:all 0.5s ease-in-out;
+        background:white;
+    }
+    .nav-ul.active{
+        right:0px;
+    }
 }
