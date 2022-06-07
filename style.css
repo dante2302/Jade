@@ -55,7 +55,8 @@ nav a{
     transition:all .2s ease
 }
 nav a:hover{
-    color:var(--jade)
+    color:var(--jade);
+    font-size:calc(var(--fs-link) + .5px)
 }  
 .home{
     color:var(--jade);
@@ -63,9 +64,38 @@ nav a:hover{
 .logo{
     width:15rem;
     margin-top:.5em;
+    cursor:pointer;
+    transition:all .5s ease
+}
+.logo:hover{
+    transform:scale(1.05)
+}
+form{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding:.7em;
+    border:.5px solid rgba(0,0,0,0.4);
+    border-radius:10px;
 }
 .nav-searchbar{
     color:rgba(0,0,0,0.6);
-    padding:1em;
-    border-radius:15px;
+    font-size:16px;
+}
+.nav-searchbar:focus{
+    outline:none;
+}
+.search-button,.nav-searchbar{
+    border:none;
+    background:transparent;
+    margin-right:.4em;
+}
+.search-button{
+    cursor:pointer;
+}
+.search-button:hover{
+    filter: invert(44%) sepia(70%) saturate(4799%) hue-rotate(140deg) brightness(97%) contrast(101%);
+}
+.search-button>img{
+    width:1rem;
 }
