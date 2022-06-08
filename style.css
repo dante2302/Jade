@@ -227,3 +227,27 @@ nav a:hover{
         margin-block:1em;
     }
 }
+
+/* Footer */
+footer{
+    padding-top:3.5em;
+    background:var(--black);
+    color:white;
+    display:grid;
+    place-items:center;
+    grid-template-rows:1fr .5fr;
+}
+.footer-content-wrap{
+    display:grid;
+    grid-template-columns:repeat(4,1fr)
+}
+.footer-content{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-items:center;
+}
+.copyright{
+    padding-block:5em;
+}
