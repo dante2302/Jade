@@ -1,10 +1,12 @@
 const hamburger = document.querySelector('.hamburger');
 const navUl = document.querySelector('.nav-ul');
 const searchBar = document.querySelector('.nav-searchbar');
-const searchForm  = document.querySelector('form')
+const searchForm  = document.querySelector('form');
+
 searchBar.addEventListener('focus',()=>{
     searchForm.classList.add('focused')
 })
+
 searchBar.addEventListener('focusout',()=>{
     searchForm.classList.remove('focused')
 })
