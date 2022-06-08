@@ -18,10 +18,12 @@
     --ff-sans:'Source Sans Pro',sans-serif;
     --fs-link: 1.7rem;
     --fs-h1:2rem;
+    --svg-s:4.5rem;
 }
 @media(min-width:768px){
     :root{
         --fs-h1:2.5rem;
+        --svg-s:6rem;
     }
 }
 body{
@@ -191,6 +193,7 @@ nav a:hover{
 }
 
 /* SVG Section */
+
 .svg-section{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -207,8 +210,8 @@ nav a:hover{
     margin:.2em;
 }
 .svg-container>img{
-    width:6rem;
-    margin-block:.7em;
+    width:var(--svg-s);
+    margin-block:1.4em;
 }
 .svg-container>h1{
     font-size:calc(var(--fs-h1) - 1rem);
@@ -219,5 +222,8 @@ nav a:hover{
     }
     .svg-container{
         margin:1.5em;
+    }
+    .svg-container>img{
+        margin-block:1em;
     }
 }
