@@ -2,13 +2,16 @@ const hamburger = document.querySelector('.hamburger');
 const navUl = document.querySelector('.nav-ul');
 const searchBar = document.querySelector('.nav-searchbar');
 const searchForm  = document.querySelector('form');
+const searchButton = document.querySelector('.search-button');
 
 searchBar.addEventListener('focus',()=>{
-    searchForm.classList.add('focused')
+    searchForm.classList.add('focused');
+    searchForm.style.paddingInline = ('.9em')
 })
 
 searchBar.addEventListener('focusout',()=>{
-    searchForm.classList.remove('focused')
+    searchForm.classList.remove('focused');
+    searchForm.style.removeProperty('padding-inline');
 })
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');

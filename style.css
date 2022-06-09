@@ -88,6 +88,8 @@ nav a:hover{
     padding-right:.3em;
     border:.5px solid rgba(0,0,0,0.4);
     border-radius:10px;
+    transition:all .2s ease;
+
 }
 #search-form.focused{
     border:2px solid black;
@@ -102,7 +104,6 @@ nav a:hover{
 .search-button,.nav-searchbar{
     border:none;
     background:transparent;
-    margin-right:.4em;
 }
 .search-button{
     cursor:pointer;
