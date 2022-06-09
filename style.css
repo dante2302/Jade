@@ -158,7 +158,7 @@ nav a:hover{
         gap:1.8em;
         overflow:hidden;
         position:fixed;
-        left:-105%;
+        right:-105%;
         margin-right:auto;
         top:0;
         z-index:1000;
@@ -166,7 +166,7 @@ nav a:hover{
         background:white;
     }
     .nav-ul.active{
-        left:0px;
+        right:0px;
     }
 }
 .image-grid{
@@ -239,7 +239,8 @@ footer{
 }
 .footer-content-wrap{
     display:grid;
-    grid-template-columns:repeat(4,1fr)
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:3em;
 }
 .footer-content{
     text-align:center;
@@ -250,4 +251,15 @@ footer{
 }
 .copyright{
     padding-block:5em;
+}
+.footer-content>a{
+    color:#3b3b3b;
+    margin:.5em;
+    transition:all 0.2s ease-in
+}
+.footer-content>h1{
+    margin-bottom:.8em;
+}
+.footer-content>a:hover{
+    color:white;
 }
