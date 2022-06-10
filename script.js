@@ -26,3 +26,4 @@ document.querySelectorAll('.nav-ul>*').forEach((link)=>{
         navUl.classList.remove('active');
     })
 })
+.
